@@ -7,7 +7,7 @@
 
 ## Website
 
-Сега за сега, сајтот е достапен тука: [http://198.58.102.234:8085/](http://198.58.102.234:8085/)
+Сајтот е достапен тука: [cfs.spodeli.org](http://cfs.spodeli.org) (и алтернативно тука: [computer-from-scratch.spodeli.org](http://computer-from-scratch.spodeli.org))
 
 ## Сервер
 
