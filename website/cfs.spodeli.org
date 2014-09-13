@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name cfs.spodeli.org;
+    server_name cfs.spodeli.org computer-from-scratch.spodeli.org;
     access_log /var/log/nginx/cfs.spodeli.org.access.log;
 
     location / {
