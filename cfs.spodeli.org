@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name cfs.spodeli.org;
+    access_log /var/log/nginx/cfs.spodeli.org.access.log;
+
+    location / {
+        proxy_pass http://localhost:8085/;
+        proxy_set_header Host $host;
+
+    }
+}
+
