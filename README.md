@@ -1,4 +1,4 @@
-# Open course: Building a computer from scratch
+# Open course: Building a computer from scratch (градење сметач од гребаница)
 
 Во ова репозитори се наоѓаат сите материјали поврзани со BCS курсот.
 
