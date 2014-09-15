@@ -33,4 +33,4 @@
 - Не. За жал, процесот на произведување процесори е комплициран и скап.
 
 ### Дали е можно процесорот што ќе го дизајнирам да се произведе и да се користи како било кој друг процесор?
-- Да! За инспирација: [http://en.wikipedia.org/wiki/Galaksija_%28computer%29](http://en.wikipedia.org/wiki/Galaksija_%28computer%29)
+- Да! За инспирација: [http://en.wikipedia.org/wiki/Galaksija_(computer)](http://en.wikipedia.org/wiki/Galaksija_%28computer%29)
