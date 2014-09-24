@@ -1,9 +1,176 @@
 .glavno-meni{
 	text-transform: uppercase;
+	background: #E0E0E0;
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #757575;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	color: #424242;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	color: #263238;
+	background: #fff;
+}
+
+body{
+	color: #212121;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color: inherit;
+}
+
+.sekcii{
+	position: relative;
+}
+
+.sekcii-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/cof-circuit-pattern-goce-mitevski.svg) center center fixed repeat;
+	background-size: 165px;
+	opacity: 0.05;
+}
+
+.sekcii section{
+	margin-top: 10px;
+	padding-top: 40px;
+	min-height: 64.5vh;
 }
 
 .glavno-meni .navbar-nav{
 	display: inline-block;
 	vertical-align: top;
 	float: none;
+}
+
+.l-h-110{
+	line-height: 110%;
+}
+
+.padded-block-lg h1,
+.padded-block-lg h2,
+.padded-block-lg h3,
+.padded-block-lg h4,
+.padded-block-lg h5,
+.padded-block-lg h6,
+.padded-block-lg p,
+.padded-block-m h1,
+.padded-block-m h2,
+.padded-block-m h3,
+.padded-block-m h4,
+.padded-block-m h5,
+.padded-block-m h6,
+.padded-block-m p{
+	margin: 0;
+}
+
+.m-top-m{
+	margin-top: 10px;
+}
+
+.m-left-m{
+	margin-left: 10px;
+}
+
+.m-right-m{
+	margin-right: 10px;
+}
+
+.m-bottom-m{
+	margin-top: 10px;
+}
+
+.p-top-lg{
+	padding-top: 20px;
+}
+
+.p-left-lg{
+	padding-left: 20px;
+}
+
+.p-right-lg{
+	padding-right: 20px;
+}
+
+.p-bottom-lg{
+	padding-top: 20px;
+}
+
+.padded-block-lg{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.padded-block-m{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px 20px;
+}
+
+.cl-grey-0{
+	color: #fff;
+}
+
+.bg-grey-0{
+	background: #fff;
+}
+
+.bg-grey-300{
+	background: #e0e0e0;
+}
+
+.bg-grey-600{
+	background: #757575;
+}
+
+.bg-grey-800{
+	background: #424242;
+}
+
+.bg-l-blue-500{
+	background: #03a9f4;
+}
+
+.bg-green-200{
+	background: #72d572;
+}
+
+.bg-green-500{
+	background: #259b24;
+}
+
+.btn.btn-reset{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0;
+	transition: all 0.1s ease-in-out 0s;
+	outline: none;
+}
+
+.btn.btn-reset:hover,
+.btn.btn-reset:focus{
+	color: #fff;
+	outline: none;
+}
+
+.btn.btn-reset:hover{
+	box-shadow: inset 0 0 0 2px rgba(0,0,0,0.15);
+}
+
+.btn.btn-reset:active{
+	box-shadow: inset 0 0 0 3px rgba(0,0,0,0.2);
 }

@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Building a Computer from Scratch!</title>
 
+		<!--Include Roboto from Google Fonts-->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
 		<!-- Bootstrap -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,36 +16,64 @@
 		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
-		<nav class="navbar navbar-default glavno-meni text-center" role="navigation">
+		<nav class="navbar navbar-default glavno-meni" role="navigation">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<ul class="nav navbar-nav">
-							<li><a href="#">За курсот</a></li>
-							<li><a href="#">Програма</a></li>
-							<li><a href="#">Цена</a></li>
-							<li><a href="#">Потребно предзнаење</a></li>
-							<li><a href="#">Материјали</a></li>
-							<li><a href="#">ЧПП</a></li>
-						</ul>
-					</div>
-				</div>
+				<ul class="nav navbar-nav" role="tablist">
+					<li class="active"><a href="#pocetna" role="tab" data-toggle="tab">Почетна</a></li>
+					<li><a href="#za-kursot" role="tab" data-toggle="tab">За курсот</a></li>
+					<li><a href="#prijava" role="tab" data-toggle="tab">Пријава</a></li>
+					<li><a href="#programa" role="tab" data-toggle="tab">Програма</a></li>
+					<li><a href="#potrebno-predznaenje" role="tab" data-toggle="tab">Потребно предзнаење</a></li>
+					<li><a href="#materijali" role="tab" data-toggle="tab">Материјали</a></li>
+					<li><a href="#cpp" role="tab" data-toggle="tab">ЧПП</a></li>
+				</ul>
 			</div>
 		</nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="page-header text-center">
-						<h1>Building a Computer from Scratch!</h1>
+		<div class="tab-content sekcii">
+			<div class="sekcii-bg"></div>
+			<section id="pocetna" class="header-main tab-pane active fade in">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="padded-block-lg bg-grey-800 cl-grey-0">
+								<h1 class="text-uppercase">Building a Computer from Scratch!</h1>
+							</div>
+							<div class="padded-block-m bg-grey-600 cl-grey-0 l-h-110">
+								<p class="">Студентски курс во применети компјутерски науки за дизајн на процесор</p>
+							</div>
+							<p>Започнете со градење на едноставни логички кола и комбинирајте ги во посложени чипови.</p>
+							<p>Од <strong>15. октомври 2014 год.</strong> до <strong>30. ноември 2014 год.</strong> во скопскиот <a href="#">хаклаб КИКА</a> <strong>научете да дизајнирате 16-битен процесор</strong> &mdash; со 32KB RAM и 28 инструкции.</p>
+							<ul class="list-inline p-top-lg p-bottom-lg">
+								<li><a class="btn btn-reset bg-green-500 cl-grey-0" href="#prijava">Пријавете се</a></li>
+								<li><a class="btn btn-reset bg-l-blue-500 cl-grey-0" href="#programa">Прочитајте ја програмата</a></li>
+							</ul>
+						</div>
+						<div class="col-md-7">
+							<div class="bg-grey-0 m-top-m m-bottom-m">
+								<img src="images/d-flip-flop-illustration-default-state-goce-mitevski.svg" alt="d-flip-flop-illustration-default-state" />
+							</div>
+						</div>
 					</div>
-					<p>"Building a computer from scratch" е курс од областа applied computer science во кој студентите работат на дизајнирање на процесор. Пристапот е bottom-up, односно, студентите почнуваат со градење на едноставни логички кола кои во текот на курсот ги комбинираат во покомплицирани чипови. Крајниот продукт е 16-битен процесор кој е поврзан со 32KB RAM меморија и има 28 инструкции.</p>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<img src="images/d-flip-flop-illustration-default-state-goce-mitevski.svg" alt="d-flip-flop-illustration-default-state" />
+			</section>
+			<section id="cpp" class="container header-main tab-pane fade">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="padded-block-m bg-grey-800 cl-grey-0">
+							<h2 class="text-uppercase">Често Поставувани Прашања</h2>
+						</div>
+						<div class="padded-block-lg bg-grey-0">
+							<h3>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+							<p>Fusce a tempor velit. Suspendisse potenti. Etiam ut commodo libero. Ut aliquam enim eu justo finibus, sit amet posuere purus posuere. Nam a tempus metus. Donec sollicitudin iaculis mollis. Morbi bibendum urna vitae nulla lacinia iaculis. In lacus mi, semper non metus in, placerat facilisis ex. Ut iaculis dolor a tellus scelerisque interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+							<h3 class="p-top-lg">2. Nam a tempus metus. Donec sollicitudin iaculis mollis?</h3>
+							<p>Morbi bibendum urna vitae nulla lacinia iaculis. In lacus mi, semper non metus in, placerat facilisis ex. Ut iaculis dolor a tellus scelerisque interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+						</div>
+					</div>
+<!--					<div class="col-md-4">
+						linkovi ovde
+					</div>-->
 				</div>
-			</div>
+			</section>
 		</div>
 		<script src="jquery-2.1.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
