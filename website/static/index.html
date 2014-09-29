@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mk">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!--		Среди ги овие тагови-->
+		<meta property="og:title" content="Firefox OS во МК">
+		<meta property="og:url" content="http://firefoxos.mozilla.mk/">
+		<meta property="og:site_name" content="Firefox OS во МК">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Firefox OS доаѓа и во Македонија! Бидете едни од првите што ќе го испробаат!">
+		<meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/styleguide/identity/firefoxos/partners-theswoop.png?2013-06">
+		<!--		Среди ги овие тагови-->
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Building a Computer from Scratch!</title>
 
 		<!--Include Roboto from Google Fonts-->
-		<link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 
 		<!-- Bootstrap -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,40 +28,269 @@
 	<body>
 		<nav class="navbar navbar-default glavno-meni" role="navigation">
 			<div class="container">
-				<ul class="nav navbar-nav" role="tablist">
-					<li class="active"><a href="#pocetna" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a></li>
-					<li><a href="#za-kursot" role="tab" data-toggle="tab">За курсот</a></li>
-					<li><a href="#prijava" role="tab" data-toggle="tab">Пријава</a></li>
-					<li><a href="#programa" role="tab" data-toggle="tab">Програма</a></li>
-					<li><a href="#potrebno-predznaenje" role="tab" data-toggle="tab">Потребно предзнаење</a></li>
-					<li><a href="#materijali" role="tab" data-toggle="tab">Материјали</a></li>
-					<li><a href="#cpp" role="tab" data-toggle="tab">ЧПП</a></li>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#pocetna" data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#za-kursot" data-toggle="tab">За курсот</a></li>
+					<li><a href="#prijava" data-toggle="tab">Пријава</a></li>
+					<li><a href="#programa" data-toggle="tab">Програма</a></li>
+					<li><a href="#materijali" data-toggle="tab">Материјали</a></li>
+					<li><a href="#haklab-kika" data-toggle="tab">Хаклаб КИКА</a></li>
+					<li><a href="#cpp" data-toggle="tab">ЧПП</a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="tab-content sekcii">
 			<div class="sekcii-bg"></div>
-			<section id="pocetna" class="header-main tab-pane active fade in">
+			<section id="pocetna" class="tab-pane active fade in">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5">
 							<div class="padded-block-lg bg-grey-800 cl-grey-0">
-								<h1 class="text-uppercase">Building a Computer from Scratch!</h1>
+								<h1 class="text-uppercase">Дизајнирање на компјутер, од нула!</h1>
 							</div>
 							<div class="padded-block-m bg-grey-600 cl-grey-0 l-h-110">
-								<p class="">Студентски курс во применети компјутерски науки за дизајн на процесор</p>
+								<p>Студентски курс во применети компјутерски науки за дизајн на процесор</p>
 							</div>
 							<p>Започнете со градење на едноставни логички кола и комбинирајте ги во посложени чипови.</p>
 							<p>Од <strong>15. октомври 2014 год.</strong> до <strong>30. ноември 2014 год.</strong> во скопскиот <a href="#">хаклаб КИКА</a> <strong>научете да дизајнирате 16-битен процесор</strong> &mdash; со 32KB RAM и 28 инструкции.</p>
-							<ul class="list-inline p-top-lg p-bottom-lg">
-								<li><a class="btn btn-reset bg-green-500 cl-grey-0" href="#prijava">Пријавете се</a></li>
-								<li><a class="btn btn-reset bg-l-blue-500 cl-grey-0" href="#programa">Прочитајте ја програмата</a></li>
+							<p>Курсот вклучува ## часа и чини <strong>#.### денари</strong>.</p>
+							<ul class="list-inline m-top-lg m-bottom-lg">
+								<li><a class="btn btn-reset bg-green-500 cl-grey-0" href="#prijava" data-toggle="tab">Пријавете се</a></li>
+								<li><a class="btn btn-reset bg-l-blue-500 cl-grey-0" href="#za-kursot" data-toggle="tab">Прочитајте повеќе за курсот</a></li>
 							</ul>
 						</div>
 						<div class="col-md-7">
-							<div class="bg-grey-0 m-top-m m-bottom-m">
-								<img src="images/d-flip-flop-illustration-default-state-goce-mitevski.svg" alt="d-flip-flop-illustration-default-state" />
+							<div class="bg-grey-0 m-top-m m-bottom-lg flip-flop-illustration">
+								<img class="img-responsive" src="images/d-flip-flop-illustration-default-state-goce-mitevski.svg" alt="d-flip-flop-illustration-default-state" />
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="za-kursot" class="container header-main tab-pane fade">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="padded-block-m bg-grey-800 cl-grey-0">
+							<h2 id="za" class="text-uppercase">За курсот</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p class="lead lead-reset">„Дизајнирање на компјутер, од нула!“ е курс чија цел е студентите да ги запознае со суштината на компјутерските системи: едноставните фундаментални принципи на кои се базираат сите компјутери и начинот на кој човекот успеал да ги примени и апстрахира овие принципи, за на крајот да го добие компјутерот кој го имаме денес.</p>
+							<p>Во курсот, за основна градбена единка се зема NAND логичката порта и од неа се градат другите логички порти, аритметичко-логичка единица, контролни чипови - за на крајот да се добие функционален процесор, способен да извршува код напишан во assembly. Иако дизајнот на процесорот е поедноставен, концептите на кои се базира се истите на кои се базираат и модерните процесори.</p>
+							<p>Курсот е базиран на популарниот <a href="http://nand2tetris.org/" rel="external">Nand2Tetris</a> курс и ги опфаќа првите 5, од вкупно 12 глави од книгата. Секоја глава е "self-contained" и содржи вежби кои можат да се изработуваат во изолација. Сепак, бидејќи концептите од секоја глава се темелат на концептите што се учеле во претходните глави, а вежбите користат компоненти кои самите ги имаме изградено, најдобро е книгата да се поминува од почетокот накај крајот, како и што е организиран курсот.</p>
+							<p>Целна група на овој курс се студенти од техничките факултети, но и средношколци кои имаат намера да продолжуваат во таа насока. Во академски контекст, овој курс го земаат студенти на почетокот и на крајот на студиите. Тие што го земаат на почеток, добиваат слика за материјалот што ги очекува, додека на тие што го земаат на крај им нуди сумирање на сѐ што научиле до тогаш.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="padded-block-m bg-grey-600 cl-grey-0">
+							<h2 class="text-uppercase">Цена</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p>во изработка</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="padded-block-m bg-grey-300">
+							<h2 id="ekipata" class="text-uppercase">Еќипата</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<div class="row m-bottom-lg">
+								<div class="col-md-4">
+									<a href="#"><img class="img-responsive thumbnail thumbnail-reset" src="images/andrej-trajcevski-612x612.jpeg" alt="Андреј Трајчевски"/></a>
+								</div>
+								<div class="col-md-8">
+									<h4 class="p-bottom-m">Андреј Трајчевски - ментор</h4>
+									<p>Андреј е повеќегодишен член на хаклабот КИКА. Професионално работи како фриленс програмер, претежно Node.js и претежно backend. Кога не работи за пари, програмира за душа. Кога сака да научи повеќе за компјутерите, организира курсеви во Хаклаб. Чита и одговара на мејлови: <a href="mailto:&#097;&#110;&#100;&#114;&#101;&#106;&#116;&#114;&#097;&#106;&#099;&#104;&#101;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">andrejtrajchevski@gmail.com</a></p>
+								</div>
+							</div>
+							<div class="row m-bottom-lg">
+								<div class="col-md-4">
+									<a href="#"><img class="img-responsive thumbnail thumbnail-reset" src="images/goce-mitevski-300x213.jpeg" alt="Гоце Митевски"/></a>
+								</div>
+								<div class="col-md-8">
+									<h4 class="p-bottom-m">Гоце Митевски - веб-дизајн</h4>
+									<p>Гоце е долгогодишен член на заедницата на Слободен Софтвер, дизајнер, како и редовен посетител на КИКА. Откако <a href="https://vimeo.com/14989758" rel="external">неговото видео</a> стана дел од секоја vanilla инсталација на Ubuntu, неговиот inbox е преполн со мејлови од типот „како да си го поправам Линуксот“. Работи претежно како веб дизајнер и е одговорен за изгледот на сајтов.</p>
+								</div>
+							</div>
+							<div class="row m-bottom-lg">
+								<div class="col-md-4">
+									<a href="#"><img class="img-responsive thumbnail thumbnail-reset" src="images/aleks-lazarov-604x404.jpeg" alt="Алекс Лазаров"/></a>
+								</div>
+								<div class="col-md-8">
+									<h4 class="p-bottom-m">Алекс Лазаров - електроника</h4>
+									<p>Алекс е човекот кој ја изгради <a href="https://www.youtube.com/watch?v=RG5nNpQVYlo" rel="external">славната LED коцка</a> во Хаклаб. Ентузијаст за електроника и лемење, одговорен е за сѐ што излегло од Хаклаб а не е код, како и за собата преполна со ѓубришта од електроника. Негово дело е и големиот protoboard кој ќе го користиме на курсот за hands-on учење на логички кола.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="prijava" class="container header-main tab-pane fade">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="padded-block-m bg-grey-800 cl-grey-0">
+							<h2 class="text-uppercase">Пријава</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p>Fusce a tempor velit. Suspendisse potenti. Etiam ut commodo libero. Ut aliquam enim eu justo finibus, sit amet posuere purus posuere. Nam a tempus metus. Donec sollicitudin iaculis mollis.</p>
+							<form id="formular" role="form" class="form-horizontal m-top-lg" action="post">
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="prijavaImePrezime">Име и презиме</label>
+									<div class="col-md-8">
+										<input type="text" class="form-control form-control-reset" id="prijavaImePrezime">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="prijavaEmail">Email</label>
+									<div class="col-md-8">
+										<input type="email" class="form-control form-control-reset" id="prijavaEmail">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="prijavaZostoSakas">На кратко, зошто сакаш да го посетуваш курсот?</label>
+									<div class="col-md-8">
+										<textarea id="prijavaZostoSakas" class="form-control form-control-reset" rows="5"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Студираш на технички факултет?</label>
+									<div class="col-md-8">
+										<div class="radio">
+											<label>
+												<input type="radio" name="prijavaFakultet" id="prijavaFakultet1" value="option1">
+												Да
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="prijavaFakultet" id="prijavaFakultet2" value="option2">
+												Не
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label">Имаш базични познавања на некој програмски јазик?</label>
+									<div class="col-md-8">
+										<div class="radio">
+											<label>
+												<input type="radio" name="prijavaPoznavanja" id="prijavaPoznavanja1" value="option1">
+												Да
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="prijavaPoznavanja" id="prijavaPoznavanja2" value="option2">
+												Не
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-offset-4 col-md-8 m-top-lg">
+										<button type="submit" class="btn btn-default btn-reset btn-success">Пријави се</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="programa" class="container header-main tab-pane fade">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="padded-block-m bg-grey-800 cl-grey-0">
+							<h2 class="text-uppercase">Програма</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="col-xs-3 col-sm-2 col-md-1">Week</th>
+										<th class="col-xs-4 col-sm-3 col-md-2">Дата</th>
+										<th class="col-xs-5 col-sm-7 col-md-9">Опис</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>0</td>
+										<td>14 октомври</td>
+										<td>интро час, last chance за пријавување и плаќање, на кратко за курсот, tools, hdl</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>21 октомври</td>
+										<td>булова алгебра: составување на елементарни порти од nand, имплементација во хдл</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>28 октомври</td>
+										<td>комбинациона логика: имплементирање на бинарни собирачи од логички порти и, конечно, ALU</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>04 ноември</td>
+										<td>секвенцијална логика: имплементирање на меморија, flip-flops, регистри и РАМ</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>11 ноември</td>
+										<td>запознавање со инструкцискиот код на процесорот, бинарно и во assembly; пишување на low-level програми и симулирање на cpu-то</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>18 ноември</td>
+										<td>интегрирање на чиповите во процесор кој може да го извршува assembly кодот од week 5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="haklab-kika" class="container header-main tab-pane fade">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="padded-block-m bg-grey-800 cl-grey-0">
+							<h2 class="text-uppercase">Хаклаб КИКА</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p><a href="http://b10g.spodeli.org/p/blog-page.html" rel="external">Хаклабот КИКА</a> е отворен простор (под покрив) каде што се собираат ентузијасти за да пишуваат код, за да лемат или за да дискутираат на разни теми, како слободата на софтверот или таа на медиумите. Хаклабот е дом на програмерите што програмираат и после работа. Хаклабот е местото во кое луѓето претежно имаат Thinkpad со инсталиран Linux.</p>
+							<p class="p-top-m p-bottom-m">
+								<img class="img-responsive img-full-width" src="images/lugje-vo-haklab-kika.jpg" alt="Луѓе во хаклаб КИКА"/>
+							</p>
+							<p>Официјално, КИКА постои од Октомври, 2011. Од тогаш па до сега, во континуитет, редовно се организираат настани поврзани со Linux и слободен софтвер (GNU/Linux прва помош), програмирање (Програмски јазици) и презентации на општи теми (Сподели знаење). Понекогаш, на проекторот во Хаклаб гледаме филмови, а настанот го нарекуваме „Сподели кино“.</p>
+							<p>Покрај редовните настани, во Хаклаб се одржуваат и настани како „Gnome Women Outreach“ и „Google Summer of Code“, во кои студенти активно земаат учество и работат на развивање на слободен софтвер. Исто така, пред проекторот често се собираат и членовите на Ruby и Drupal заедниците.</p>
+							<p>Хаклабот нема спонзор, во живот го одржуваат донациите на неговите членови, кои понекогаш организираат курсеви како овој. Дел од парите ги зема организаторот, а дел одат за КИКА. Додатно, придонесуваат и луѓе кои се заинтересирани просторот да постои, но не се во можност да не посетуваат. Ако си еден од нив, <a href="http://b10g.spodeli.org/2013/07/2013.html">тука</a> има информации како да донираш.</p>
+							<h3>Редовни настани (as of 1-ви Октомври, 2014)</h3>
+							<ul>
+								<li>Понеделник, 19ч. - GNU/Linux прва помош: ако имаш Linux и имаш некаков проблем што не можеш да го решиш, понеделник е денот кога треба да дојдеш</li>
+								<li>Среда, 19ч. - Собир на Drupal заедницата: и се што е поврзано со овој CMS</li>
+								<li>Четврток, 19ч. - Програмски јазици: веројатно најпопуларниот настан во Хаклаб; дискутираме функционално програмирање, опскурни јазици, пишуваме демо апликации и секогаш остануваме до касно</li>
+								<li>Сабота, 21ч. - Сподели знаење: целодневно, без агенда</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="padded-block-m bg-grey-300">
+							<h2 class="text-uppercase">Каде е КИКА?</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p class="p-bottom-m">Хаклабот КИКА се наоѓа на <strong>ул. „Васил Стефановски“ бр.8/1</strong>, во центарот на Скопје близу до поликлиниката Идадија.</p>
+							<iframe id="haklab-kika-mapa" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d1482.5863792370312!2d21.417931456547635!3d41.9965677932188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x135415cb9803772b%3A0x4f23a320663c1429!2sVasil+Stefanovski+8%2F1%2C+Skopje+1000%2C+Macedonia!3m2!1d41.996244!2d21.418345!5e0!3m2!1sen!2s!4v1411937849496" height="300" frameborder="0" style="border:0; width: 100%"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="materijali" class="container header-main tab-pane fade">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="padded-block-m bg-grey-800 cl-grey-0">
+							<h2 class="text-uppercase">Материјали</h2>
+						</div>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p>во изработка</p>
 						</div>
 					</div>
 				</div>
@@ -62,21 +301,16 @@
 						<div class="padded-block-m bg-grey-800 cl-grey-0">
 							<h2 class="text-uppercase">Често Поставувани Прашања</h2>
 						</div>
-						<div class="padded-block-lg bg-grey-0">
-							<h3>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-							<p>Fusce a tempor velit. Suspendisse potenti. Etiam ut commodo libero. Ut aliquam enim eu justo finibus, sit amet posuere purus posuere. Nam a tempus metus. Donec sollicitudin iaculis mollis. Morbi bibendum urna vitae nulla lacinia iaculis. In lacus mi, semper non metus in, placerat facilisis ex. Ut iaculis dolor a tellus scelerisque interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
-							<h3 class="p-top-lg">2. Nam a tempus metus. Donec sollicitudin iaculis mollis?</h3>
-							<p>Morbi bibendum urna vitae nulla lacinia iaculis. In lacus mi, semper non metus in, placerat facilisis ex. Ut iaculis dolor a tellus scelerisque interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+						<div class="padded-block-lg padded-block-reset bg-grey-0">
+							<p>во изработка</p>
 						</div>
 					</div>
-<!--					<div class="col-md-4">
-						linkovi ovde
-					</div>-->
 				</div>
 			</section>
 		</div>
 		<script src="jquery-2.1.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="app.js"></script>
+		<script src="tweaks.js"></script>
 	</body>
 </html>
