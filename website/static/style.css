@@ -272,6 +272,7 @@ p > a{
 #cpp h3:not(:first-child){
 	padding-top: 10px;
 }
+
 @media (min-width: 768px) {
 	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > .active > a:hover,

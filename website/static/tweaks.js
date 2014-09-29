@@ -36,5 +36,6 @@ $(document).on('shown.bs.tab', function (event) {
 	}
 
 	// Scroll to page top - this makes sure tabs with a lot of content are not shown from the position of their container
-	$(document).scrollTop(0);
+	window.scrollTo(0, 0);
+
 });
