@@ -38,4 +38,7 @@ $(document).on('shown.bs.tab', function (event) {
 	// Scroll to page top - this makes sure tabs with a lot of content are not shown from the position of their container
 	window.scrollTo(0, 0);
 
+	// Hide non-collapsed main navigation
+	$('#glavno-meni-toggle').collapse('hide');
+
 });

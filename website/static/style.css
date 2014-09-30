@@ -27,8 +27,12 @@ p > a{
 	color: #757575;
 }
 
-.glavno-meni .navbar-default .navbar-nav > li > a:hover,
-.glavno-meni .navbar-default .navbar-nav > li > a:focus{
+.glavno-meni .navbar-collapse{
+	border: 0;
+}
+
+.glavno-meni .navbar-nav > li > a:hover,
+.glavno-meni .navbar-nav > li > a:focus{
 	color: #424242;
 }
 
@@ -275,9 +279,9 @@ p > a{
 }
 
 @media (min-width: 768px) {
-	.glavno-meni .navbar-default .navbar-nav > .active > a,
-	.glavno-meni .navbar-default .navbar-nav > .active > a:hover,
-	.glavno-meni .navbar-default .navbar-nav > .active > a:focus{
+	.glavno-meni .navbar-nav > .active > a,
+	.glavno-meni .navbar-nav > .active > a:hover,
+	.glavno-meni .navbar-nav > .active > a:focus{
 		color: #263238;
 		background: #fff;
 	}
@@ -288,4 +292,28 @@ p > a{
 	}
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+	.glavno-meni .navbar-nav > .active > a,
+	.glavno-meni .navbar-nav > .active > a:hover,
+	.glavno-meni .navbar-nav > .active > a:focus{
+		color: #263238;
+		background: inherit;
+	}
+
+	.glavno-meni .navbar-nav > .active > a{
+		font-weight: bold;
+	}
+
+	.glavno-meni .navbar-collapse{
+		background: #eee;
+	}
+
+	.glavno-meni .navbar-toggle{
+		background: #f5f5f5;
+	}
+
+	.glavno-meni .navbar-toggle:hover,
+	.glavno-meni .navbar-toggle:focus{
+		background: #fff;
+	}
+}
