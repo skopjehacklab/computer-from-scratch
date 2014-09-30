@@ -1,11 +1,21 @@
-$(document).ready(function (e) {
+$(document).ready(function () {
 
-	loadTabHash();
+	// Jump on a tab based on anchor; for page reloads or links
+	if (document.location.hash) {
+		$('a[href=' + document.location.hash + ']').tab('show');
+	}
+
+	// Update hash based on tab, basically restores browser default behavior to fix Bootstrap tabs
+	$(document.body).on("click", "a[data-toggle]", function () {
+		document.location.hash = this.getAttribute("href");
+	});
+
 });
 
-$(window).on('hashchange', function (e) {
-
-	loadTabHash();
+// On history back activate the tab of the document.location.hash if exists or the default tab if no hash exists
+$(window).on('hashchange', function () {
+	var anchor = document.location.hash || $("a[data-toggle=tab]").first().attr("href");
+	$('a[href=' + anchor + ']').tab('show');
 });
 
 // Control what happens once a tab has been toggled
@@ -19,9 +29,6 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
 	// Mark main navigation links when clicking on buttons
 	$('.glavno-meni .nav').find('a[href="' + $(e.target).attr('href') + '"]').parent().addClass('active');
-
-	// Add hash to location.hash
-	location.hash = $(e.target).attr('href').substr(1);
 
 	if ($('#haklab-kika').hasClass('active')) {
 
@@ -38,15 +45,3 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 	window.scrollTo(0, 0);
 
 });
-
-// Check if location.hash is a hash and load a tab accordingly
-function loadTabHash() {
-	if (location.hash.substr(0, 1) === "#") {
-		$("a[href='#" + location.hash.substr(1) + "']").tab("show");
-	}
-
-	// Show first tab if no hash set
-	if (location.hash === '') {
-		$("a[href='#" + $('.glavno-meni .nav a:first').attr('href').substr(1) + "']").tab("show");
-	}
-}
