@@ -1,32 +1,4 @@
 //--------------------------
-// Helpers
-//--------------------------
-/* global Rx */
-
-var combine = Rx.Observable.combineLatest;
-
-function fromCheckbox(item) {
-  var obs = new Rx.Subject();
-  item.change(function() {
-    obs.onNext(item.is(':checked'));
-  })
-  return obs;
-}
-
-function link(observable, subject, initial) {
-  var last = initial || false;
-  subject.onNext(last);
-  observable.subscribe(function(val) {
-    if (last != val) subject.onNext(last = val);
-  })
-}
-
-function not(x) { return !x; }
-function and(x, y) { return x && y; }
-function or(x, y) { return x || y; }
-function nand(x, y) { return not(and(x, y)); }
-
-//--------------------------
 // Observable <-> SVG mappers
 //--------------------------
 
@@ -64,6 +36,27 @@ function mkSwitch(element) {
     });
     return obs;
 }
+
+//--------------------------
+// Helpers
+//--------------------------
+/* global Rx */
+
+var combine = Rx.Observable.combineLatest;
+
+function link(observable, subject, initial) {
+  var last = initial || false;
+  subject.onNext(last);
+  observable.subscribe(function(val) {
+    if (last != val) subject.onNext(last = val);
+  })
+}
+
+function not(x) { return !x; }
+function and(x, y) { return x && y; }
+function or(x, y) { return x || y; }
+function nand(x, y) { return not(and(x, y)); }
+
 
 //--------------------------
 // Circuit
