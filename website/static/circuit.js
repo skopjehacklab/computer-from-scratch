@@ -4,7 +4,7 @@
 
 function toWire(element) {
     return function(bool) {
-        element.attr('stroke', bool ? '#259B24' : '#000000');
+        element.attr('stroke', bool ? '#259B24' : '#212121');
         element.attr('stroke-width', bool ? "3" : '2');
     }
 }
