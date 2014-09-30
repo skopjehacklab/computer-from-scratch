@@ -35,10 +35,12 @@ $(document).on('shown.bs.tab', function (event) {
 		$('#haklab-kika-mapa').attr('src', $('#haklab-kika-mapa').attr('src'));
 	}
 
+	// Hide non-collapsed main navigation below certain width and if main navigation visible
+	if ($(window).width() <= 768 || $('#glavno-meni-toggle').hasClass('in') ) {
+		$('#glavno-meni-toggle').removeClass('in');
+	}
+
 	// Scroll to page top - this makes sure tabs with a lot of content are not shown from the position of their container
 	window.scrollTo(0, 0);
-
-	// Hide non-collapsed main navigation
-	$('#glavno-meni-toggle').collapse('hide');
 
 });
