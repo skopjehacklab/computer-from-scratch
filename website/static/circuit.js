@@ -50,8 +50,6 @@ function toBox(element) {
         var replace = wasOn ? '_Off' : '_On';
         var currentImg = element.attr('xlink:href')
         var newImg = currentImg.replace(search, replace);
-        console.log(newImg);
-        console.log(element[0]);
         element.attr('xlink:href', newImg);
     }
 }
