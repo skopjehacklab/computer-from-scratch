@@ -292,7 +292,7 @@ p > a{
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.glavno-meni .navbar-nav > .active > a,
 	.glavno-meni .navbar-nav > .active > a:hover,
 	.glavno-meni .navbar-nav > .active > a:focus{
