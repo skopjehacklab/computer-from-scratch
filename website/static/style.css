@@ -23,11 +23,12 @@ p > a{
 	border-radius: 0;
 }
 
-.navbar-default .navbar-nav > li > a{
+.glavno-meni .navbar-default .navbar-nav > li > a{
 	color: #757575;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+.glavno-meni .navbar-default .navbar-nav > li > a:hover,
+.glavno-meni .navbar-default .navbar-nav > li > a:focus{
 	color: #424242;
 }
 
@@ -36,8 +37,8 @@ p > a{
 	margin-bottom: 10px;
 	position: relative;
 	height: auto;
-	/* 50px main menu min-height + 10px top margin + 10px bottom margin */
 	min-height: calc(100% - 70px);
+	/* 50px main menu min-height + 10px top margin + 10px bottom margin */
 }
 
 .sekcii-bg{
@@ -274,11 +275,16 @@ p > a{
 }
 
 @media (min-width: 768px) {
-	.navbar-default .navbar-nav > .active > a,
-	.navbar-default .navbar-nav > .active > a:hover,
-	.navbar-default .navbar-nav > .active > a:focus{
+	.glavno-meni .navbar-default .navbar-nav > .active > a,
+	.glavno-meni .navbar-default .navbar-nav > .active > a:hover,
+	.glavno-meni .navbar-default .navbar-nav > .active > a:focus{
 		color: #263238;
 		background: #fff;
+	}
+
+	.glavno-meni .collapse{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
