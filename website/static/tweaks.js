@@ -1,16 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function (e) {
 
-	var url = document.location.toString();
+	loadTabHash();
+});
 
-	// Enable automatic tab toggling according to URL
-	if (url.match('#')) {
-		$('.glavno-meni .nav a[href=#' + url.split('#')[1] + ']').tab('show');
-	}
+$(window).on('hashchange', function (e) {
 
+	loadTabHash();
 });
 
 // Control what happens once a tab has been toggled
-$(document).on('shown.bs.tab', function (event) {
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
 	// Remove CSS marking class from all <li> elements in main navigation
 	$('.glavno-meni .nav li').removeClass('active');
@@ -19,15 +18,10 @@ $(document).on('shown.bs.tab', function (event) {
 	$('section .active').removeClass('active');
 
 	// Mark main navigation links when clicking on buttons
-	$('.glavno-meni .nav').find('a[href="' + $(event.target).attr('href') + '"]').parent().addClass('active');
+	$('.glavno-meni .nav').find('a[href="' + $(e.target).attr('href') + '"]').parent().addClass('active');
 
-	// Add hash to window.location
-	window.location.hash = $(event.target).attr('href');
-
-	// Remove hash if loading the first tab through the main navigation
-	if (window.location.hash === $('.glavno-meni .nav a:first-child').attr('href')) {
-		window.location.hash = '';
-	}
+	// Add hash to location.hash
+	location.hash = $(e.target).attr('href').substr(1);
 
 	if ($('#haklab-kika').hasClass('active')) {
 
@@ -36,7 +30,7 @@ $(document).on('shown.bs.tab', function (event) {
 	}
 
 	// Hide non-collapsed main navigation below certain width and if main navigation visible
-	if ($(window).width() <= 768 || $('#glavno-meni-toggle').hasClass('in') ) {
+	if ($(window).width() <= 768 || $('#glavno-meni-toggle').hasClass('in')) {
 		$('#glavno-meni-toggle').removeClass('in');
 	}
 
@@ -44,3 +38,15 @@ $(document).on('shown.bs.tab', function (event) {
 	window.scrollTo(0, 0);
 
 });
+
+// Check if location.hash is a hash and load a tab accordingly
+function loadTabHash() {
+	if (location.hash.substr(0, 1) === "#") {
+		$("a[href='#" + location.hash.substr(1) + "']").tab("show");
+	}
+
+	// Show first tab if no hash set
+	if (location.hash === '') {
+		$("a[href='#" + $('.glavno-meni .nav a:first').attr('href').substr(1) + "']").tab("show");
+	}
+}
