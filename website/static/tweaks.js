@@ -20,9 +20,6 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 	// Mark main navigation links when clicking on buttons
 	$('.glavno-meni .nav').find('a[href="' + $(e.target).attr('href') + '"]').parent().addClass('active');
 
-	// Add hash to location.hash
-	location.hash = $(e.target).attr('href').substr(1);
-
 	if ($('#haklab-kika').hasClass('active')) {
 
 		// Redraw Google map due to a strange resetting behavior on tab switch
