@@ -23,6 +23,7 @@
     "url": "https://github.com/skopjehacklab/computer-from-scratch/issues"
   },
   "dependencies": {
-    "express": "~4.9.0"
+    "express": "~4.9.0",
+    "body-parser": "~1.9.0"
   }
 }
