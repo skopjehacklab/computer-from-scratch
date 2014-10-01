@@ -71,10 +71,9 @@ p > a{
 	border: 10px solid #eee;
 }
 
-/* Required for Internet Explorer */
-.flip-flop-illustration img{
-	width: 100%;
-	height: 100%;
+.flip-flop-illustration svg{
+	width: 100%; /* Required for Safari */
+	height: 100%; /* Required for Safari */
 }
 
 .text-m{
