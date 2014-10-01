@@ -317,3 +317,7 @@ p > a{
 		background: #fff;
 	}
 }
+
+#S1, #S2 {
+    cursor: pointer;
+}
