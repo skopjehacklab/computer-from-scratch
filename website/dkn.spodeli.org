@@ -10,3 +10,8 @@ server {
     }
 }
 
+server {
+    listen 80;
+    server_name cfs.spodeli.org computer-from-scratch.spodeli.org;
+    return 301 $scheme://dkn.spodeli.org$request_uri;
+}
