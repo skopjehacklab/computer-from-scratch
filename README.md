@@ -7,7 +7,7 @@
 
 ## Website
 
-Сајтот е достапен тука: [cfs.spodeli.org](http://cfs.spodeli.org) (и алтернативно тука: [computer-from-scratch.spodeli.org](http://computer-from-scratch.spodeli.org))
+Сајтот е достапен тука: [dkn.spodeli.org](http://dkn.spodeli.org) (и алтернативно тука: [dizajniranje-kompjuter-od-nula.spodeli.org](http://dizajniranje-kompjuter-od-nula.spodeli.org))
 
 ## Сервер
 
