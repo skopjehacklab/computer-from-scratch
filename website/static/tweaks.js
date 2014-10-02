@@ -1,5 +1,22 @@
 $(document).ready(function () {
 
+	// Detect IE and apply a few more CSS rules for the inline SVG and its container and show a disclamer
+	if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0) {
+		$('.flip-flop-illustration').css({
+			'position': 'relative',
+			'padding-bottom': '60%'
+		});
+
+		$('.flip-flop-illustration svg').css({
+			'position': 'absolute',
+			'display': 'block',
+			'top': '0',
+			'left': '0'
+		});
+
+		$('<div class="text-center p-left-lg p-right-lg"><span class="">Оваа илустрација е интерактивна, но бидејќи вашиот прелистувач ја нема потребната поддршка за <abbr title="Scalable Vector Graphics">SVG</abbr>, најверојатно нема да работи како што сме предвиделе.</span></div>').appendTo('#pocetna .col-md-7');
+	}
+
 	// Jump on a tab based on anchor; for page reloads or links
 	if (document.location.hash) {
 		$('a[href=' + document.location.hash + ']').tab('show');
