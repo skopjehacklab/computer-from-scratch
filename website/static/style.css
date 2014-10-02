@@ -88,6 +88,10 @@ p > a{
 	line-height: 110%;
 }
 
+.l-h-120{
+	line-height: 120%;
+}
+
 .padded-block-lg h1,
 .padded-block-lg h2,
 .padded-block-lg h3,
@@ -318,6 +322,14 @@ p > a{
 	.glavno-meni .navbar-toggle:hover,
 	.glavno-meni .navbar-toggle:focus{
 		background: #fff;
+	}
+
+}
+
+@media (max-width: 992px) {
+
+	.flip-flop-illustration{
+		margin-top: 30px
 	}
 }
 
