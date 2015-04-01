@@ -281,6 +281,10 @@ p > a{
 	box-shadow: inset 0 0 0 3px rgba(0,0,0,0.2);
 }
 
+.btn-default[disabled]{
+	background: #E0E0E0;
+}
+
 #cpp h3:not(:first-child){
 	padding-top: 10px;
 }
